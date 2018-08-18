@@ -1,0 +1,54 @@
+Locators
+=========
+Id values which are alphanumeric(u_i_6) may change with every refresh.
+class name values cannot have spaces- compound class names are not permitted.(in css permitted)
+If two elements have same locator values then selenium chooses the first one from top-left.
+xpath locator values--replace double quotes with single quotes---java error?(dq inside dq)
+xpath values starting with \html are not reliable.avoid it.
+copy cssselector not css path in firefox.(By.CSSSelector in sele)
+cssselector is at the bottom of inspect window in chrome.Latest chrome has added near xpath.
+xpath/css values are not unique.they can be defined in many ways.
+firefox console : xpath/css validation - for xpath use $x("") - for css use $("")
+chrome-validation xpath/css - ctrl+F in html inspect tab - give value and press enter- yellow highlight
+ or use console tab.
+custom xpath format = //tagname[@attribute='value']----for tagname u can use *(regexp)
+custom css format = tagname[attribute='value']---tagname can be omitted/blank
+ css - tagname#id attribute -- tagname can be omitted
+ css - tagname.class attrb
+ sometimes custom xpath/css although correct can show error in console window but in selenium it runs well.
+ Reg Exp format for xpath - //tagName[contains(@attribute,'value')] -- value is partial match
+ Reg Exp format for css - tagName[Atrribute*='value']-- value is partial match
+ 
+ xpath formats - 
+ //tagname[@attribute='value']
+ //*[@attribute='value']
+ //tagName[contains(@attribute,'value')]-- value is partial match
+ 
+ css formats -
+ tagname[attribute='value']
+ [attribute='value']
+ tagname#id attribute
+ #id attribute
+ tagname.class attrb
+ .class attrb --- if it has spaces then replace with dot
+ tagName[Atrribute*='value']-- value is partial match
+ 
+ xpath - absolute - ??from top node to sub-node - //tag[@attrib='val']/tag/tag/tag[2]
+ xpath - relative - ??directly sub-node or element required
+ 
+ xpath - traverse between sibling nodes - parent node and required sub-node are dynamic 
+ .//*[@attrib='val']/following-sibling::li[2]----the former node is static and is a top sibling node
+ 
+ xpath - from child node to parent node - .//*[@id='tablist1-tab1']/parent::ul
+ 
+ Only in xpath we can travrse from child to parent; css doesnt support this.
+ 
+ xpath using text - //*[text()='val'] -- text seen on webpage for the element...button label
+ 
+ css is 10x faster than xpath ??
+ 
+ xpath functions - contains,following,preceding.......lot like this check w3schools.com xpath tutorial and guru99.com
+ 
+ 
+ 
+ 
