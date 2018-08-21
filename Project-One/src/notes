@@ -32,6 +32,7 @@ custom css format = tagname[attribute='value']---tagname can be omitted/blank
  tagname.class attrb
  .class attrb --- if it has spaces then replace with dot
  tagName[Atrribute*='value']-- value is partial match
+ By.cssSelector("[class='datepicker-days'] th[class='next']")----node X node X+3---- for x+3 node
  
  xpath - absolute - ??from top node to sub-node - //tag[@attrib='val']/tag/tag/tag[2]
  xpath - relative - ??directly sub-node or element required
