@@ -49,7 +49,7 @@ custom css format = tagname[attribute='value']---tagname can be omitted/blank
  css is 10x faster than xpath ??
  
  xpath functions - contains,following,preceding.......lot like this check w3schools.com xpath tutorial and guru99.com
- 
+ xpath - starts-with,ends-with,and,or
  
  
  
