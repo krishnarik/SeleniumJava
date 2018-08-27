@@ -1,0 +1,11 @@
+how to create testng xml
+include will run ONLY mentioned methods;all others will be excluded
+regex -- mobile.* --- all methods starting with mobile name will be included/excluded
+package can be included under both suite and test level.
+beforetest and aftertest are applicable to one test folder in a suite.....suite can have many test folders
+beforesuite and aftersuite will run before/after all test folders.
+before/after method is applicable only for that class....a test folder may have many classes
+before class/after class is applicable only for that class....a test folder may have many classes
+before/after test/suite can be in more than one class for a given test/suite folder
+For groups, all before/after will NOT be executed UNLESS they are marked same group.
+one method can be in more than one group ----- @Test(groups={"smoke","smoke1"})

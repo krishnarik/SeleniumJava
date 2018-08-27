@@ -9,12 +9,19 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 //import com.sun.deploy.util.StringUtils;
 
 //import com.sun.org.apache.xpath.internal.operations.Number;
 
 public class table {
+	
+	@Test
+	public void AlongMain()
+	{
+		System.out.println("along main");
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
