@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<suite name="Suite" parallel="tests" thread-count="5">
+  <test thread-count="5" name="Test"> <!-- test folder 1 -->
+  
+  <parameter name="URL" value="abc.com"></parameter>
+    <parameter name="loginname" value="hibaby"></parameter>
+    
     <classes>
+    
       <class name="Part4_TestNG.hello"/>
       <class name="Part4_TestNG.class3"/>      
     </classes>
   </test> 
   
-  <test thread-count="5" name="Test1">
+  <test thread-count="5" name="Test1"> <!-- test folder 2 -->
     <classes>      
       <class name="Part4_TestNG.class2">
       <methods>
       	<include name="demo1"></include>
+      	<include name="demo2"></include>
       </methods>
       </class>
       <class name="Part3.table">

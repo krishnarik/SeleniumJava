@@ -9,3 +9,13 @@ before class/after class is applicable only for that class....a test folder may 
 before/after test/suite can be in more than one class for a given test/suite folder
 For groups, all before/after will NOT be executed UNLESS they are marked same group.
 one method can be in more than one group ----- @Test(groups={"smoke","smoke1"})
+annotation helper attributes ---- dependency --- @Test(DependsOnMethods={"methodname1"})
+@Test(enabled=false) will skip the method.
+@Test(timeout=4000) will fail the method beyond mentioned time limit.
+Parameters can be included at both suite-level and test-level 
+@Parameters({"URL"})  <parameter name="URL" value="qaclickacademy.com"/>
+@DataProvider , @Test(dataProvider="methodname")
+Listeners are defined at suite level; class-name="" or name="" both will work
+<suite name="Suite" parallel="tests" thread-count="5"> ------- "tests" is all test folders in suite
+<test thread-count="5" name="Test" parallel="classes">
+testng reports----index.html in test-output folder(refresh project to see)----chrono view is good

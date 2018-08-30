@@ -1,6 +1,7 @@
 package Part4_TestNG;
 
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class class2 {
@@ -9,11 +10,11 @@ public class class2 {
 	public void demo1()
 	{
 	   System.out.println("hello21"); 
-
+	   Assert.assertTrue(false);
 	}
 	
 	
-	@Test
+	@Test()
 	public void demo2()
 	{
 	   System.out.println("hello22"); 
@@ -24,33 +25,33 @@ public class class2 {
 	public void demo3()
 	{
 	   System.out.println("hello23"); 
-
+	   
 	}
 	
 	
 	@BeforeSuite
 	public void demobs()
 	{
-		System.out.println("=======beforesuite");
+		System.out.println("=======beforesuite2");
 	}
 	
 	@AfterSuite
 	public void demoas()
 	{
-		System.out.println("=======aftersuite");
+		System.out.println("=======aftersuite2");
 	}
 	
 	
 	@BeforeClass
 	public void demobc()
 	{
-		System.out.println("=======beforeclass");
+		System.out.println("=======beforeclass2");
 	}
 	
 	@AfterClass
 	public void demoac()
 	{
-		System.out.println("=======afterclass");
+		System.out.println("=======afterclass2");
 	}
 	
 
