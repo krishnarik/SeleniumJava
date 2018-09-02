@@ -1,41 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="9" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-08-27T13:27:47Z" name="Suite" finished-at="2018-08-27T13:27:47Z" duration-ms="133">
+  <suite started-at="2018-08-30T12:25:13Z" name="Default suite" finished-at="2018-08-30T12:25:32Z" duration-ms="18394">
     <groups>
-      <group name="smoke1">
-        <method signature="hello.demo1()[pri:0, instance:Part4_TestNG.hello@49e5f737]" name="demo1" class="Part4_TestNG.hello"/>
-      </group> <!-- smoke1 -->
-      <group name="smoke">
-        <method signature="class2.demo1()[pri:0, instance:Part4_TestNG.class2@5c671d7f]" name="demo1" class="Part4_TestNG.class2"/>
-        <method signature="class3.demo1()[pri:0, instance:Part4_TestNG.class3@757277dc]" name="demo1" class="Part4_TestNG.class3"/>
-        <method signature="hello.demo1()[pri:0, instance:Part4_TestNG.hello@49e5f737]" name="demo1" class="Part4_TestNG.hello"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2018-08-27T13:27:47Z" name="Test" finished-at="2018-08-27T13:27:47Z" duration-ms="133">
-      <class name="Part4_TestNG.class3">
-        <test-method signature="demo1()[pri:0, instance:Part4_TestNG.class3@757277dc]" started-at="2018-08-27T13:27:47Z" name="demo1" finished-at="2018-08-27T13:27:47Z" duration-ms="4" status="PASS">
+    <test started-at="2018-08-30T12:25:13Z" name="Default test" finished-at="2018-08-30T12:25:32Z" duration-ms="18394">
+      <class name="Part3.ABCProperties">
+        <test-method signature="Login()[pri:0, instance:Part3.ABCProperties@4988d8b8]" started-at="2018-08-30T12:25:13Z" name="Login" finished-at="2018-08-30T12:25:32Z" duration-ms="18332" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- demo1 -->
-      </class> <!-- Part4_TestNG.class3 -->
-      <class name="Part4_TestNG.hello">
-        <test-method is-config="true" signature="demobm()[pri:0, instance:Part4_TestNG.hello@49e5f737]" started-at="2018-08-27T13:27:47Z" name="demobm" finished-at="2018-08-27T13:27:47Z" duration-ms="16" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demobm -->
-        <test-method signature="demo1()[pri:0, instance:Part4_TestNG.hello@49e5f737]" started-at="2018-08-27T13:27:47Z" name="demo1" finished-at="2018-08-27T13:27:47Z" duration-ms="20" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demo1 -->
-      </class> <!-- Part4_TestNG.hello -->
-      <class name="Part4_TestNG.class2">
-        <test-method signature="demo1()[pri:0, instance:Part4_TestNG.class2@5c671d7f]" started-at="2018-08-27T13:27:47Z" name="demo1" finished-at="2018-08-27T13:27:47Z" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- demo1 -->
-      </class> <!-- Part4_TestNG.class2 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- Login -->
+      </class> <!-- Part3.ABCProperties -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

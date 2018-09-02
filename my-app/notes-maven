@@ -1,0 +1,35 @@
+download maven zip 
+add MAVEN_HOME in environ var C:\Users\Admin\Downloads\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin
+add above location to PATH env 
+check maven version in cmd; mvn --version
+ land on "maven in five minutes" page(google it)
+ create maven project in the desired directory--below command
+ mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+ artifactid/my-app is the project folder and groupid is package name
+ cd my-app ; mvn eclipse:eclipse ; my-app is now fit to open in eclipse
+ above command adds two files - .classpath and .project
+ In eclipse import my-app;add dependencies in pom.xml
+ In maven repository website there is four line xml code for every dependency;add it to pom.xml
+ add surefire plugin from mvn rep
+ Under .m2 folder all reps are stored ----  C:\Users\Admin\.m2\repository
+ Check above path in Eclipse-Window-Preferences-Maven-UserSettings
+ mvn clean compile test
+ check below links to change eclipse/project/pom settings if you get build error in maven
+ https://stackoverflow.com/questions/19655184/no-compiler-is-provided-in-this-environment-perhaps-you-are-running-on-a-jre-ra
+ http://roufid.com/no-compiler-is-provided-in-this-environment/
+ All the class names should end with "test" in maven project.
+ after all changes.....right-click on project....select maven.....select update project
+ To use testng xml modify pom.xml--- https://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html
+ Running a Single Test(class) --- mvn -Dtest=AppiumTest test
+ Building profiles in pom.xml and run : mvn test -PRegression
+ 
+ 
+ ***************************************
+ JENKINS
+ ***************************************
+ 
+ 
+ Download and install jenkins.war from jenkins.io
+ go to folder where above war file is present in cmd and run : java -jar jenkins.war -httpPort:9090
+ 
+ java -jar "jenkins (1).war" --enable-future-java
