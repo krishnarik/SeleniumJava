@@ -32,4 +32,8 @@ check maven version in cmd; mvn --version
  Download and install jenkins.war from jenkins.io
  go to folder where above war file is present in cmd and run : java -jar jenkins.war -httpPort:9090
  
- java -jar "jenkins (1).war" --enable-future-java
+ java -jar "jenkins (1).war" --enable-future-java (my machine java is 10 but jenkins war file supports 8)
+ 
+ TestNG reports for jenkins...??(plugin for jenkins??)
+ 
+ 
