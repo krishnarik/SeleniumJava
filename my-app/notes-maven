@@ -37,3 +37,25 @@ check maven version in cmd; mvn --version
  TestNG reports for jenkins...??(plugin for jenkins??)
  
  
+ 
+  ***************************************
+ LOG4J
+ ***************************************
+ 
+ Download log4j zip from apache.org 
+ Add two jars as reference....api and core
+ create resources folder in project level and add log4j2.xml.Copy the xml content/format from below link.
+ for xml file----http://logging.apache.org/log4j/2.x/manual/configuration.html
+ Add resources folder to project right click....build path...configure...source tab
+  
+ 
+ 
+ Use log. Error() -----to log when elements are not displayed in the page or if any validations fail
+Use Log. Debug() -----When each Selenium action is performed like click, SendKeys, getText()
+Use log.info()-----When operation is successfully completed ex: After loading page, or after any successful validations.It’s just counterpart to log. Error()
+
+http://tutorialspointexamples.com/log4j-tutorial-beginners-eclipse/
+ 
+ 
+ 
+ 
